@@ -43,4 +43,4 @@ Route::get('/gcreate',[GenreController::class, 'create'])->name("genre_create");
 Route::post('/gstore',[GenreController::class, 'store'])->name("genre_store");
 
 // Destroy
-Route::delete('/destroy/{id}', [GenreController::class, 'destroy'])->name("genre_hapus");
+Route::delete('/gdestroy/{id}', [GenreController::class, 'destroy'])->name("genre_hapus");

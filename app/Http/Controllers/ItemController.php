@@ -12,7 +12,9 @@ class ItemController extends Controller
     // Index
     public function index()
     {
-        $items = Item::with("Genre")->get();
+        $items = Item::with("Genre")
+        ->orderBy('name')
+        ->get();
 
         return view('items.index', compact('items'));
     }
